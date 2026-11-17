@@ -153,7 +153,7 @@ resource "aws_ecs_task_definition" "nginx" {
   container_definitions = jsonencode([
     {
       name      = "nginx"
-      image     = "nginx:latest"
+      image     = "haydenhellebrand/aws-docker-terraform-api:1.0"
       essential = true
 
       portMappings = [
